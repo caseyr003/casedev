@@ -25,6 +25,11 @@ hr {
    text-decoration: overline;
 }
 
+.nav-logo {
+   height: 26px;
+   width: auto;
+}
+
 
 /* Header */
 .logo {
