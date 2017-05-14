@@ -28,6 +28,90 @@ hr {
 .nav-logo {
    height: 26px;
    width: auto;
+   display: block;
+   margin: auto;
+}
+
+.navbar-default {
+   background-color: rgba(255, 255, 255, 0.85);
+   border: 0;
+   display: flex;
+}
+
+.nav-container .navbar-header {
+   margin: auto;
+}
+
+.nav-container {
+   display: flex;
+}
+
+.nav-menu {
+   position: fixed;
+   top: 10px;
+   left: 40px;
+}
+
+.nav-menu:hover {
+   cursor: pointer;
+}
+
+.menu-icon {
+   height: 20px;
+   width: auto;
+}
+
+.menu-item {
+   display: flex;
+   position: fixed;
+   background-color: gray;
+   border-radius: 8px;
+   width: 80%;
+   top: 60px;
+   left: -100%;
+   height: 40px;
+   transition: .5s;
+}
+
+.nav-github {
+   top: 110px;
+   transition-delay: .1s;
+}
+
+.nav-linkedin {
+   top: 160px;
+   transition-delay: .2s;
+}
+
+.nav-contact {
+   top: 210px;
+   transition-delay: .3s;
+}
+
+.menu-open {
+   left: 10%;
+}
+
+.overlay {
+   background: rgba(255, 255, 255, 0.0);
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: 3s;
+}
+
+.overlay-open {
+   background: rgba(255, 255, 255, 0.85);
+   display: block;
+}
+
+.menu-link {
+   margin: auto;
+   color: #fff;
 }
 
 

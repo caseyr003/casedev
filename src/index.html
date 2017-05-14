@@ -9,29 +9,34 @@
       <title>CaseCode | Full Stack Engineer</title>
 
       <!-- Add CSS from minified file -->
-      <link href="css/style.css" rel="stylesheet">
       <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
    </head>
 
    <body>
-
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-         <div class="container">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand page-scroll" href="#page-top"><img class="nav-logo" src="img/nav-logo.png" alt="main logo"></a>
+      <div class="overlay">
+      </div>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container nav-container">
+            <div class="nav-menu menu-toggle">
+               <img class="menu-icon" src="img/menu-icon.png">
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="https://github.com/caseyr003" target="_blank">Github</a></li>
-                  <li><a href="https://www.linkedin.com/in/casey003/" target="_blank">LinkedIn</a></li>
-                  <li><a href="mailto:caseyross003@gmail.com">Email</a></li>
-               </ul>
+            <div class="menu">
+               <div class="menu-item nav-home">
+                  <a class="menu-link" href="#">Home</a>
+               </div>
+               <div class="menu-item nav-github">
+                  <a class="menu-link" href="https://github.com/caseyr003" target="_blank">Github</a>
+               </div>
+               <div class="menu-item nav-linkedin">
+                  <a class="menu-link" href="https://www.linkedin.com/in/casey003/" target="_blank">LinkedIn</a>
+               </div>
+               <div class="menu-item nav-contact">
+                  <a class="menu-link" href="mailto:caseyross003@gmail.com">Email</a>
+               </div>
+            </div>
+            <div class="navbar-header">
+               <a class="navbar-brand page-scroll" href="#page-top"><img class="nav-logo" src="img/nav-logo.png" alt="main logo"></a>
             </div>
          </div>
       </nav>
@@ -154,7 +159,7 @@
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="js/pagescroll.js"></script>
+      <script src="js/menu.js"></script>
       <!-- Bootstrap JavaScript -->
       <script src="js/bootstrap.js"></script>
 
