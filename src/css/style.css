@@ -48,8 +48,8 @@ hr {
 
 .nav-menu {
    position: fixed;
-   top: 10px;
-   left: 40px;
+   top: 20px;
+   left: 30px;
 }
 
 .nav-menu:hover {
@@ -69,22 +69,23 @@ hr {
    width: 80%;
    top: 60px;
    left: -100%;
-   height: 40px;
+   height: 60px;
+   box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
    transition: .5s;
 }
 
 .nav-github {
-   top: 110px;
+   top: 130px;
    transition-delay: .1s;
 }
 
 .nav-linkedin {
-   top: 160px;
+   top: 200px;
    transition-delay: .2s;
 }
 
 .nav-contact {
-   top: 210px;
+   top: 270px;
    transition-delay: .3s;
 }
 
@@ -92,21 +93,81 @@ hr {
    left: 10%;
 }
 
+.nav-menu {
+   margin: auto;
+   height: 20px;
+   width: 18px;
+}
+
+.nav-menu .top,
+.nav-menu .middle,
+.nav-menu .bottom {
+   display: block;
+   position: absolute;
+   height: 4px;
+   width: 100%;
+   background: #0E9CBE;
+   border-radius: 12px;
+   opacity: 1;
+   left: 0;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   -webkit-transition: .3s;
+   -moz-transition: .3s;
+   -o-transition: .3s;
+   transition: .3s;
+}
+
+.nav-menu .middle {
+   top: 6px;
+   width: 75%;
+}
+
+.nav-menu .bottom {
+   top: 12px;
+   width: 75%;
+   left: 4px
+}
+
+.nav-menu .top-open {
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   top: 10px;
+}
+
+.nav-menu .middle-open {
+   width: 0;
+}
+
+.nav-menu .bottom-open {
+   width: 100%;
+   left: 0;
+   top: 10px;
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
 .overlay {
+   visibility: hidden;
    background: rgba(255, 255, 255, 0.0);
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    transition: 3s;
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 3;
+   transition: 1s;
 }
 
 .overlay-open {
+   visibility: visible;
    background: rgba(255, 255, 255, 0.85);
-   display: block;
 }
 
 .menu-link {
