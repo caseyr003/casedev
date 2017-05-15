@@ -10,7 +10,7 @@ body {
 
 hr {
    margin: 30px 0;
-   border-top: 2px solid #359FD0 !important;
+   border-top: 2px solid #1F9CBC;
 }
 
 
@@ -106,7 +106,7 @@ hr {
    position: absolute;
    height: 4px;
    width: 100%;
-   background: #0E9CBE;
+   background: #1F9CBC;
    border-radius: 12px;
    opacity: 1;
    left: 0;
@@ -132,11 +132,11 @@ hr {
 }
 
 .nav-menu .top-open {
-   -webkit-transform: rotate(-45deg);
-   -moz-transform: rotate(-45deg);
-   -o-transform: rotate(-45deg);
-   transform: rotate(-45deg);
-   top: 10px;
+   -webkit-transform: rotate(135deg);
+   -moz-transform: rotate(135deg);
+   -o-transform: rotate(135deg);
+   transform: rotate(135deg);
+   top: 6px;
 }
 
 .nav-menu .middle-open {
@@ -146,7 +146,7 @@ hr {
 .nav-menu .bottom-open {
    width: 100%;
    left: 0;
-   top: 10px;
+   top: 6px;
    -webkit-transform: rotate(45deg);
    -moz-transform: rotate(45deg);
    -o-transform: rotate(45deg);
@@ -177,33 +177,47 @@ hr {
 
 
 /* Header */
+
+.home-bg {
+   background-image: url("../img/bg-pattern2.png");
+   min-height: 700px;
+}
+
+.main-logo {
+   display: flex;
+   margin: 120px auto;
+}
+
 .logo {
-   max-height: 140px;
+   display: block;
+   max-height: 100px;
    width: auto;
+   max-width: 100%;
    float: left;
+   margin: auto;
 }
 
 .title {
    text-align: right;
 }
 
-.title h1 {
+.title .title-name {
    font-size: 68px;
+   text-align: center;
 }
 
-.title h3 {
+.title-hr {
+   color:
+}
+
+.title .title-subtitle {
    font-weight: lighter;
+   text-align: center;
 }
 
 @media (max-width: 500px) {
    .title {
       text-align: center;
-   }
-
-   .logo {
-      display: block;
-      margin: 0 auto;
-      float: none;
    }
 }
 
