@@ -10,7 +10,7 @@ body {
 
 hr {
    margin: 30px 10%;
-   border-top: 2px solid #1F9CBC;
+   border-top: 2px solid #1f9cbc;
 }
 
 
@@ -22,7 +22,9 @@ hr {
 
 .navbar-fixed-top a:hover {
    background-color: transparent;
-   text-decoration: overline;
+   color: #1f9cbc;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 .nav-logo {
@@ -109,7 +111,7 @@ hr {
    position: absolute;
    height: 4px;
    width: 100%;
-   background: #1F9CBC;
+   background-color: #1f9cbc;
    border-radius: 12px;
    opacity: 1;
    left: 0;
@@ -175,6 +177,10 @@ hr {
 
 .menu-link {
    margin: auto;
+   color: #fff;
+}
+
+.menu-link .fa {
    color: #fff;
 }
 
@@ -299,25 +305,82 @@ hr {
 
 
 /* Footer */
-footer {
-   margin-top: 60px;
-   padding: 60px 20px;
-   background-color: #b2b2b2;
-   text-align: center;
-   min-height: 200px;
+
+.footer {
+   background-color: #c1c1c1;
+   color: #fff;
+   padding: 40px 20px;
+   margin-top: 40px;
 }
 
-footer h2,
-footer h4,
-footer h5 {
+.footer-header {
+   text-transform: uppercase;
+   margin-top: 20px;
    color: #fff;
 }
 
-footer ul {
-   list-style: none;
+.footer .fa {
+   color: #fff;
 }
 
-footer li {
-   display: inline;
-   padding: 10px;
+.footer-company,
+.footer-support,
+.footer-team,
+.footer-social {
+   padding: 0;
+   color: #fff;
+}
+
+.footer-item {
+   list-style-type: none;
+   padding: 10px 0 0 0;
+}
+
+.footer-hr {
+   border-top: 1px solid #1f9cbc;
+}
+
+.footer-link {
+   color: #fff;
+}
+
+.footer .fa:hover,
+.footer-link:hover {
+   color: #1f9cbc;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.footer-copyright {
+   font-size: 11px;
+}
+
+.copyright-link {
+   color: #1f9cbc;
+}
+
+.copyright-link:hover {
+   color: #fff;
+   cursor: pointer;
+}
+
+.footer-img {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.footer-logo {
+   display: block;
+   margin: auto;
+   width: 30px;
+   height: auto;
+}
+
+.footer-text {
+   color: #fff;
+}
+
+.footer-disclaimer {
+   font-size: 9px;
+   color: #fff;
 }
